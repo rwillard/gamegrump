@@ -73,7 +73,7 @@ gamegrump.start = function(){
         ],
         image: 'plus.png',
         happiness: 50
-    },
+    }
 ];
 
     var director = new lime.Director(document.body,gameObj.width,gameObj.height);     
