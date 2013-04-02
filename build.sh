@@ -7,6 +7,7 @@ echo "Building Game..."
 ../bin/lime.py build gamegrump -o dist/game.js
 
 echo "Copying Assets..."
-cp -rf images dist/images
+rm -rf dist/images
+cp -rf images dist
 
 echo "All done! New build has been put in the dist directory."
