@@ -24,7 +24,7 @@ gamegrump.start = function(){
         landLayer_h: 64*6,
         controlsLayer_w: 64*5,
         controlsLayer_h: 64*1.5,
-        costPlace: 5,
+        //costPlace: 5,
 
         //stand shop
         stand_margin_x: 10,
@@ -33,14 +33,14 @@ gamegrump.start = function(){
 
     var playerObj = {
         money: 300,
-        currentStand: 0             
+        currentStand: -1             
     }
 
     gameObj.stands = [
     {
         name: 'redtopplus',
         effect: [
-            [ 0,  -1,  0],
+            [ 0, -1,  0],
             [ 1,  0,  1],
             [ 0,  1,  0]
         ],
@@ -50,7 +50,7 @@ gamegrump.start = function(){
         name: 'redleftplus',
         effect: [
             [ 0,  1,  0],
-            [ -1,  0,  1],
+            [-1,  0,  1],
             [ 0,  1,  0]
         ],
         image: 'redleftplus.png'
@@ -60,7 +60,7 @@ gamegrump.start = function(){
         effect: [
             [ 0,  1,  0],
             [ 1,  0,  1],
-            [ 0,  -1,  0]
+            [ 0, -1,  0]
         ],
         image: 'redbottomplus.png'
     },
@@ -68,7 +68,7 @@ gamegrump.start = function(){
         name: 'redrightplus',
         effect: [
             [ 0,  1,  0],
-            [ 1,  0,  -1],
+            [ 1,  0, -1],
             [ 0,  1,  0]
         ],
         image: 'redrightplus.png'
@@ -76,45 +76,45 @@ gamegrump.start = function(){
     {
         name: 'empty',
         effect: [
-            [0, 0, 0],
-            [0, 0, 0],
-            [0, 0, 0]
+            [ 0,  0,  0],
+            [ 0,  0,  0],
+            [ 0,  0,  0]
         ],
         image: 'place.png'
     },
     {
         name: 'redbotright',
         effect: [
-            [0, 0, 0],
-            [0, 0, -1],
-            [0, -1, 0]
+            [ 0,  0,  0],
+            [ 0,  0, -1],
+            [ 0, -1,  0]
         ],
         image: 'redbotright.png'
     },
     {
         name: 'redbotleft',
         effect: [
-            [0, 0, 0],
-            [-1, 0, 0],
-            [0, -1, 0]
+            [ 0,  0,  0],
+            [-1,  0,  0],
+            [ 0, -1,  0]
         ],
         image: 'redbotleft.png'
     },
     {
         name: 'redlefttop',
         effect: [
-            [0, -1, 0],
-            [-1, 0, 0],
-            [0, 0, 0]
+            [ 0, -1,  0],
+            [-1,  0,  0],
+            [ 0,  0,  0]
         ],
         image: 'redlefttop.png'
     },
     {
         name: 'redrighttop',
         effect: [
-            [0, -1, 0],
-            [0, 0, -1],
-            [0, 0, 0]
+            [ 0, -1,  0],
+            [ 0,  0, -1],
+            [ 0,  0,  0]
         ],
         image: 'redrighttop.png'
     },    
@@ -159,7 +159,7 @@ gamegrump.start = function(){
     gameObj.levels = [
     {
         stands: [{x: 0, y: 1, stand: 5},{x: 2, y: 1, stand: 4},{x: 3, y: 1, stand: 6}, {x: 1, y: 1, stand: 4}, {x: 3, y: 2, stand: 4}, {x: 3, y: 3, stand: 4}, {x: 3, y: 4, stand: 7}, {x: 2, y: 4, stand: 4}, {x: 1, y: 4, stand: 4}, {x: 0, y: 4, stand: 8}, {x: 0, y: 3, stand: 4}, {x: 0, y: 2, stand: 4}, {x: 1, y: 3, stand: 3}],
-        queue: ['1', '1', '1', '0'],
+        queue: ['1', '1', '1', '0', '1', '1', '1', '1', '1', '1', '1'],
         blocked: [{x: 0, y: 0},{x:1, y: 0},{x:2, y: 0},{x:3, y: 0},{x:4, y: 0},{x:4, y: 1},{x:4, y: 2},{x:4, y: 3},{x:4, y: 4},{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]
     },
     {
@@ -282,8 +282,8 @@ gamegrump.start = function(){
     gameObj.standArea = function() {
         standsLayer.removeAllChildren();
         for(var i=0; i<gameObj.levels[gameObj.currentLevel].queue.length; i++) {
-            var item = new lime.Sprite().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 8 + (gameObj.stand_margin_x + gameObj.tile_size)*i, gameObj.height-gameObj.controlsLayer_h/1.1).setFill('images/'+gameObj.stands[i].image).setSize(gameObj.tile_size, gameObj.tile_size);
-            item.label = new lime.Label().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 29 + (gameObj.stand_margin_x + gameObj.tile_size)*i, gameObj.height-gameObj.controlsLayer_h/1.1 + 10).setFontColor('#FFFFFF').setText(gameObj.activeQueue[i]).setFontSize(40);
+            var item = new lime.Sprite().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 8 + (gameObj.stand_margin_x + gameObj.tile_size/2)*(i%7), gameObj.height*(Math.floor((i+7)/7))*.07 + 355).setFill('images/'+gameObj.stands[i].image).setSize(gameObj.tile_size/2, gameObj.tile_size/2);
+            item.label = new lime.Label().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 20 + (gameObj.stand_margin_x + gameObj.tile_size/2)*(i%7), gameObj.height*(Math.floor((i+7)/7))*.07 + 362).setFontColor('#FFFFFF').setText(gameObj.activeQueue[i]).setFontSize(15);
 
             /*if (playerObj.currentStand == i){
                 itemLabel.setFontColor('#FFFF00');
@@ -316,7 +316,7 @@ gamegrump.start = function(){
         //var newqueue = [];
         //var k = 0;
         gameObj.activeQueue[a]= gameObj.activeQueue[a]-1;
-        playerObj.currentStand = '6';
+        playerObj.currentStand = '-1';
         /*for (var i=0; i<gameObj.activeQueue.length; i++){
             if (a == gameObj.activeQueue[i]){
                 for (var j=0; j<gameObj.activeQueue.length; j++){
@@ -344,7 +344,7 @@ gamegrump.start = function(){
     gameObj.addQueue = function(a){
         gameObj.activeQueue[a] = gameObj.activeQueue[a] + 1;
         gameObj.standArea();
-        playerObj.currentStand = '6';
+        playerObj.currentStand = '-1';
     }
 
     //win scene

@@ -58,7 +58,7 @@ gamegrump.Land = function(gameObj, playerObj, xpos, ypos) {
             for(var j=0; j < 3; j++){
                 if(gameObj.activeStands[(xpos-1)+i] && gameObj.activeStands[(xpos-1)+i][(ypos-1)+j]){
                     var neighbor = gameObj.activeStands[(xpos-1)+i][(ypos-1)+j];
-                    neighbor.happinessInfluence += gameObj.stands[land.stand].effect[i][j];
+                    neighbor.happinessInfluence += gameObj.stands[land.stand].effect[j][i];
                     if (neighbor.state == land.PLACED || neighbor.state == land.STARTED){
                         if (neighbor.happinessInfluence < 0){
                             neighbor.happinessSprite.setFill('images/bad.png');
@@ -78,7 +78,7 @@ gamegrump.Land = function(gameObj, playerObj, xpos, ypos) {
                 for(var j=0; j < 3; j++){
                     if(gameObj.activeStands[(xpos-1)+i] && gameObj.activeStands[(xpos-1)+i][(ypos-1)+j]){
                         var neighbor = gameObj.activeStands[(xpos-1)+i][(ypos-1)+j];
-                        neighbor.happinessInfluence -= gameObj.stands[land.stand].effect[i][j];
+                        neighbor.happinessInfluence -= gameObj.stands[land.stand].effect[j][i];
                         if (neighbor.state == land.PLACED || neighbor.state == land.STARTED){
                             if (neighbor.happinessInfluence < 0){
                                 neighbor.happinessSprite.setFill('images/bad.png');
@@ -94,7 +94,7 @@ gamegrump.Land = function(gameObj, playerObj, xpos, ypos) {
             land.sprite.setFill('images/place.png');
             land.happinessSprite.setFill('images/blank.png');
         }        
-        else if(land.state == land.EMPTY && playerObj.currentStand != 6) {
+        else if(land.state == land.EMPTY && playerObj.currentStand != -1) {
             console.log(playerObj.currentStand);
             //place land
             land.stand = playerObj.currentStand;
@@ -116,7 +116,7 @@ gamegrump.Land = function(gameObj, playerObj, xpos, ypos) {
                 for(var j=0; j < 3; j++){
                     if(gameObj.activeStands[(xpos-1)+i] && gameObj.activeStands[(xpos-1)+i][(ypos-1)+j]){
                         var neighbor = gameObj.activeStands[(xpos-1)+i][(ypos-1)+j];
-                        neighbor.happinessInfluence += gameObj.stands[land.stand].effect[i][j];
+                        neighbor.happinessInfluence += gameObj.stands[land.stand].effect[j][i];
                         if (neighbor.state == land.PLACED || neighbor.state == land.STARTED){
                             if (neighbor.happinessInfluence < 0){
                                 neighbor.happinessSprite.setFill('images/bad.png');
