@@ -130,7 +130,7 @@ gamegrump.Land = function(gameObj, playerObj, xpos, ypos) {
             gameObj.removeQueue(playerObj.currentStand);
             var wincheck = true;
             for (var i=0; i<gameObj.activeQueue.length; i++){
-                if (gameObj.activeQueue[i] != 0){
+                if (gameObj.activeQueue[i].num != 0){
                     wincheck = false;
                 }
             }

@@ -45,6 +45,7 @@ gamegrump.start = function(){
             [ 0,  1,  0]
         ],
         image: 'redtopplus.png'
+        //index: 0
     },
     {
         name: 'redleftplus',
@@ -54,6 +55,7 @@ gamegrump.start = function(){
             [ 0,  1,  0]
         ],
         image: 'redleftplus.png'
+        //index: 1
     },
     {
         name: 'redbottomplus',
@@ -63,6 +65,7 @@ gamegrump.start = function(){
             [ 0, -1,  0]
         ],
         image: 'redbottomplus.png'
+        //index: 2
     },
     {
         name: 'redrightplus',
@@ -72,6 +75,7 @@ gamegrump.start = function(){
             [ 0,  1,  0]
         ],
         image: 'redrightplus.png'
+        //index: 3
     },
     {
         name: 'empty',
@@ -81,6 +85,7 @@ gamegrump.start = function(){
             [ 0,  0,  0]
         ],
         image: 'place.png'
+        //index: 4
     },
     {
         name: 'redbotright',
@@ -90,6 +95,7 @@ gamegrump.start = function(){
             [ 0, -1,  0]
         ],
         image: 'redbotright.png'
+        //index: 5
     },
     {
         name: 'redbotleft',
@@ -99,6 +105,7 @@ gamegrump.start = function(){
             [ 0, -1,  0]
         ],
         image: 'redbotleft.png'
+        //index: 6
     },
     {
         name: 'redlefttop',
@@ -108,6 +115,7 @@ gamegrump.start = function(){
             [ 0,  0,  0]
         ],
         image: 'redlefttop.png'
+        //index: 7
     },
     {
         name: 'redrighttop',
@@ -117,6 +125,7 @@ gamegrump.start = function(){
             [ 0,  0,  0]
         ],
         image: 'redrighttop.png'
+        //index: 8
     },    
     {
         name: 'happy',
@@ -126,6 +135,7 @@ gamegrump.start = function(){
             [ 1,  1,  1]
         ],
         image: 'happy.png'
+        //index: 9
     },
     {
         name: 'evil',
@@ -135,6 +145,7 @@ gamegrump.start = function(){
             [-1, -1, -1]
         ],
         image: 'evil.png'
+        //index: 10
     },
     {
         name: 'x',
@@ -144,6 +155,7 @@ gamegrump.start = function(){
             [ 1, -1,  1]
         ],
         image: 'x.png'
+        //index: 11
     },
     {
         name: 'plus',
@@ -153,44 +165,225 @@ gamegrump.start = function(){
             [-1,  1, -1]
         ],
         image: 'plus.png'
+        //index: 12
+    },
+    {
+        name: 'blueplus',
+        effect: [
+            [ 0,  1,  0],
+            [ 1,  0,  1],
+            [ 0,  1,  0]
+        ],
+        image: 'blueplus.png'
+        //index: 13
+    },
+    {
+        name: 'redplus',
+        effect: [
+            [ 0, -1,  0],
+            [-1,  0, -1],
+            [ 0, -1,  0]
+        ],
+        image: 'redplus.png'
+        //index: 14
+    },
+    {
+        name: 'bluerighttop',
+        effect: [
+            [ 0,  1,  0],
+            [ 0,  0,  1],
+            [ 0,  0,  0]
+        ],
+        image: 'bluerighttop.png'
+        //index: 15
+    },
+    {
+        name: 'bluebotleft',
+        effect: [
+            [ 0,  0,  0],
+            [ 1,  0,  0],
+            [ 0,  1,  0]
+        ],
+        image: 'bluebotleft.png'
+        //index 16
+    },
+    {
+        name: 'redleft',
+        effect: [
+            [ 0,  0,  0],
+            [-1,  0,  0],
+            [ 0,  0,  0]
+        ],
+        image: 'redleft.png'
+        //index 17
+    },
+    {
+        name: 'redtop',
+        effect: [
+            [ 0, -1,  0],
+            [ 0,  0,  0],
+            [ 0,  0,  0]
+        ],
+        image: 'redtop.png'
+        //index 18
+    },
+    {
+        name: 'blueleftright',
+        effect: [
+            [ 0,  0,  0],
+            [ 1,  0,  1],
+            [ 0,  0,  0]
+        ],
+        image: 'blueleftright.png'
+        //index 19
+    },
+    {
+        name: 'bluetopbot',
+        effect: [
+            [ 0,  1,  0],
+            [ 0,  0,  0],
+            [ 0,  1,  0]
+        ],
+        image: 'bluetopbot.png'
+        //index 20
+    },
+    {
+        name: 'bluetop',
+        effect: [
+            [ 0,  1,  0],
+            [ 0,  0,  0],
+            [ 0,  0,  0]
+        ],
+        image: 'bluetop.png'
+        //index 21
+    },
+    {
+        name: 'redx',
+        effect: [
+            [-1,  0, -1],
+            [ 0,  0,  0],
+            [-1,  0, -1]
+        ],
+        image: 'redx.png'
+        //index 22
+    },
+    {
+        name: 'norightplus',
+        effect: [
+            [ 0,  1,  0],
+            [ 1,  0,  0],
+            [ 0,  1,  0]
+        ],
+        image: 'norightplus.png'
+        //index 23
+    },
+    {
+        name: 'notleftplus',
+        effect: [
+            [ 0,  1,  0],
+            [ 0,  0,  1],
+            [ 0,  1,  0]
+        ],
+        image: 'noleftplus.png'
+        //index 24
+    },
+    {
+        name: 'redsw',
+        effect: [
+            [ 0,  0,  0],
+            [ 0,  0,  0],
+            [-1,  0,  0]
+        ],
+        image: 'redsw.png'
+        //index 25
+    },
+    {
+        name: 'redse',
+        effect: [
+            [ 0,  0,  0],
+            [ 0,  0,  0],
+            [ 0,  0, -1]
+        ],
+        image: 'redse.png'
+        //index 26
+    },
+    {
+        name: 'redwholeleft',
+        effect: [
+            [-1,  0,  0],
+            [-1,  0,  0],
+            [-1,  0,  0]
+        ],
+        image: 'redwholeleft.png'
+        //index 27
+    },
+    {
+        name: 'redwholeright',
+        effect: [
+            [ 0,  0, -1],
+            [ 0,  0, -1],
+            [ 0,  0, -1]
+        ],
+        image: 'redwholeright.png'
+        //index 28
+    },
+    {
+        name: 'blueswse',
+        effect: [
+            [ 0,  0,  0],
+            [ 0,  0,  0],
+            [ 1,  0,  1]
+        ],
+        image: 'blueswse.png'
+        //index 29
+    },
+    {
+        name: 'redrightnwne',
+        effect: [
+            [-1,  0, -1],
+            [ 0,  0, -1],
+            [ 0,  0,  0]
+        ],
+        image: 'redrightnwne.png'
+        //index 30
+    },
+    {
+        name: 'redleftnwne',
+        effect: [
+            [-1,  0, -1],
+            [-1,  0,  0],
+            [ 0,  0,  0]
+        ],
+        image: 'redleftnwne.png'
+        //index 31
     }
 ];
 
     gameObj.levels = [
     {
         stands: [{x: 0, y: 1, stand: 5},{x: 2, y: 1, stand: 4},{x: 3, y: 1, stand: 6}, {x: 1, y: 1, stand: 4}, {x: 3, y: 2, stand: 4}, {x: 3, y: 3, stand: 4}, {x: 3, y: 4, stand: 7}, {x: 2, y: 4, stand: 4}, {x: 1, y: 4, stand: 4}, {x: 0, y: 4, stand: 8}, {x: 0, y: 3, stand: 4}, {x: 0, y: 2, stand: 4}, {x: 1, y: 3, stand: 3}],
-        queue: ['1', '1', '1', '0', '1', '1', '1', '1', '1', '1', '1'],
+        queue: [{pos: 0, num: 1}, {pos: 1, num: 1}, {pos: 2, num: 1}],
         blocked: [{x: 0, y: 0},{x:1, y: 0},{x:2, y: 0},{x:3, y: 0},{x:4, y: 0},{x:4, y: 1},{x:4, y: 2},{x:4, y: 3},{x:4, y: 4},{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]
     },
     {
-        stands: [{x: 2, y: 5, stand: 1},{x: 4, y: 4, stand: 2},{x: 3, y: 3, stand: 1}, {x: 1, y: 1, stand: 0}, {x: 2, y: 2, stand: 3}],
-        queue: ['0', '1', '1', '2'],
-        blocked: [{x:0, y: 0}]        
+        stands: [{x: 1, y: 2, stand: 14},{x: 2, y: 2, stand: 13},{x: 1, y: 3, stand: 13}, {x: 2, y: 3, stand: 14}],
+        queue: [{pos: 15, num: 2}, {pos: 16, num: 2}],
+        blocked: [{x: 0, y: 0},{x:1, y: 0},{x:2, y: 0},{x:3, y: 0},{x:4, y: 0},{x:4, y: 1},{x:4, y: 2},{x:4, y: 3},{x:4, y: 4},{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]      
     },
     {
-        stands: [{x: 2, y: 4, stand: 3},{x: 1, y: 3, stand: 2},{x: 3, y: 3, stand: 1}, {x: 1, y: 1, stand: 0}, {x: 2, y: 2, stand: 3}],
-        queue: ['2', '1', '1', '0'],
-        blocked: [{x: 0, y: 0},{x:1, y: 2}]
+        stands: [{x: 1, y: 2, stand: 10},{x: 2, y: 3, stand: 10}],
+        queue: [{pos: 9, num: 1}, {pos: 17, num: 1}, {pos: 18, num: 1}, {pos: 19, num: 1}, {pos: 16, num: 1}, {pos: 20, num: 1}, {pos: 21, num: 1}],
+        blocked: [{x: 0, y: 0},{x:1, y: 0},{x:2, y: 0},{x:3, y: 0},{x:4, y: 0},{x:4, y: 1},{x:4, y: 2},{x:4, y: 3},{x:4, y: 4},{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]      
     },
     {
-        stands: [{x: 2, y: 4, stand: 3},{x: 1, y: 3, stand: 2},{x: 3, y: 3, stand: 1}, {x: 1, y: 1, stand: 0}, {x: 2, y: 2, stand: 3}],
-        queue: ['2', '1', '1', '0'],
-        blocked: [{x: 0, y: 0},{x:1, y: 2}]
+        stands: [{x: 1, y: 1, stand: 22},{x: 3, y: 1, stand: 22},{x: 1, y: 3, stand: 22},{x: 3, y: 3, stand: 22}],
+        queue: [{pos: 22, num: 6}, {pos: 23, num: 2}, {pos: 24, num: 2}, {pos: 19, num: 2}, {pos: 4, num: 6}],
+        blocked: [{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]      
     },
     {
-        stands: [{x: 2, y: 4, stand: 3},{x: 1, y: 3, stand: 2},{x: 3, y: 3, stand: 1}, {x: 1, y: 1, stand: 0}, {x: 2, y: 2, stand: 3}],
-        queue: ['2', '1', '1', '0'],
-        blocked: [{x: 0, y: 0},{x:1, y: 2}]
-    },
-    {
-        stands: [{x: 2, y: 4, stand: 3},{x: 1, y: 3, stand: 2},{x: 3, y: 3, stand: 1}, {x: 1, y: 1, stand: 0}, {x: 2, y: 2, stand: 3}],
-        queue: ['2', '1', '1', '0'],
-        blocked: [{x: 0, y: 0},{x:1, y: 2}]
-    },
-    {
-        stands: [{x: 2, y: 4, stand: 3},{x: 1, y: 3, stand: 2},{x: 3, y: 3, stand: 1}, {x: 1, y: 1, stand: 0}, {x: 2, y: 2, stand: 3}],
-        queue: ['2', '1', '1', '0'],
-        blocked: [{x: 0, y: 0},{x:1, y: 2}]
+        stands: [{x: 1, y: 0, stand: 26},{x: 3, y: 0, stand: 25}],
+        queue: [{pos: 10, num: 4}, {pos: 9, num: 2}, {pos: 27, num: 3}, {pos: 28, num: 3}, {pos: 29, num: 1}, {pos: 30, num: 1}, {pos: 31, num: 1}, {pos: 4, num: 7}],
+        blocked: [{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]      
     }
 ];
 
@@ -275,6 +468,7 @@ gamegrump.start = function(){
             gameObj.activeStands[gameObj.levels[gameObj.currentLevel].stands[i].x][gameObj.levels[gameObj.currentLevel].stands[i].y].Start(gameObj.levels[gameObj.currentLevel].stands[i].stand);
         }
         gameObj.activeQueue = gameObj.levels[gameObj.currentLevel].queue.slice(0);
+        console.log(gameObj.activeQueue);
         //gameObj.timerstart = true;
         gameObj.standArea();
     };
@@ -282,9 +476,14 @@ gamegrump.start = function(){
     gameObj.standArea = function() {
         standsLayer.removeAllChildren();
         for(var i=0; i<gameObj.levels[gameObj.currentLevel].queue.length; i++) {
-            var item = new lime.Sprite().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 8 + (gameObj.stand_margin_x + gameObj.tile_size/2)*(i%7), gameObj.height*(Math.floor((i+7)/7))*.07 + 355).setFill('images/'+gameObj.stands[i].image).setSize(gameObj.tile_size/2, gameObj.tile_size/2);
-            item.label = new lime.Label().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 20 + (gameObj.stand_margin_x + gameObj.tile_size/2)*(i%7), gameObj.height*(Math.floor((i+7)/7))*.07 + 362).setFontColor('#FFFFFF').setText(gameObj.activeQueue[i]).setFontSize(15);
-
+            if (gameObj.levels[gameObj.currentLevel].queue.length > 4){
+                var item = new lime.Sprite().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 8 + (gameObj.stand_margin_x + gameObj.tile_size/2)*(i%7), gameObj.height*(Math.floor((i+7)/7))*.07 + 355).setFill('images/'+gameObj.stands[gameObj.levels[gameObj.currentLevel].queue[i].pos].image).setSize(gameObj.tile_size/2, gameObj.tile_size/2);
+                item.label = new lime.Label().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 20 + (gameObj.stand_margin_x + gameObj.tile_size/2)*(i%7), gameObj.height*(Math.floor((i+7)/7))*.07 + 362).setFontColor('#FFFFFF').setText(gameObj.activeQueue[i].num).setFontSize(15);
+            }
+            else{
+                var item = new lime.Sprite().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 8 + (gameObj.stand_margin_x + gameObj.tile_size)*i, gameObj.height-90).setFill('images/'+gameObj.stands[gameObj.levels[gameObj.currentLevel].queue[i].pos].image).setSize(gameObj.tile_size, gameObj.tile_size);
+                item.label = new lime.Label().setAnchorPoint(0,0).setPosition(gameObj.stand_margin_x + 28 + (gameObj.stand_margin_x + gameObj.tile_size)*(i), gameObj.height-80).setFontColor('#FFFFFF').setText(gameObj.activeQueue[i].num).setFontSize(40);                
+            }
             /*if (playerObj.currentStand == i){
                 itemLabel.setFontColor('#FFFF00');
             }*/
@@ -298,8 +497,8 @@ gamegrump.start = function(){
             //pick Stand
             (function(item, i) {
                 goog.events.listen(item,['mousedown', 'touchstart'], function(e) {
-                    if (gameObj.activeQueue[i] > 0){
-                        playerObj.currentStand = i;
+                    if (gameObj.activeQueue[i].num > 0){
+                        playerObj.currentStand = gameObj.activeQueue[i].pos;
                         e.targetObject.label.setFontColor('#FFFF00');
                         //standSprite.setFill('images/'+gameObj.stands[gameObj.activeQueue[i]].image);
                         //director.replaceScene(gameScene);
@@ -315,8 +514,12 @@ gamegrump.start = function(){
     gameObj.removeQueue = function(a){
         //var newqueue = [];
         //var k = 0;
-        gameObj.activeQueue[a]= gameObj.activeQueue[a]-1;
-        playerObj.currentStand = '-1';
+        for (var i=0; i<gameObj.activeQueue.length;i++){
+            if (gameObj.activeQueue[i].pos == a){
+                gameObj.activeQueue[i].num = gameObj.activeQueue[i].num-1;
+                playerObj.currentStand = '-1';
+            }
+        }
         /*for (var i=0; i<gameObj.activeQueue.length; i++){
             if (a == gameObj.activeQueue[i]){
                 for (var j=0; j<gameObj.activeQueue.length; j++){
@@ -342,9 +545,13 @@ gamegrump.start = function(){
     }
 
     gameObj.addQueue = function(a){
-        gameObj.activeQueue[a] = gameObj.activeQueue[a] + 1;
-        gameObj.standArea();
-        playerObj.currentStand = '-1';
+        for (var i=0; i<gameObj.activeQueue.length;i++){
+            if (gameObj.activeQueue[i].pos == a){
+                gameObj.activeQueue[i].num = gameObj.activeQueue[i].num + 1;
+                gameObj.standArea();
+                playerObj.currentStand = '-1';
+            }
+        }
     }
 
     //win scene
