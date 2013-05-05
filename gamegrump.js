@@ -382,7 +382,7 @@ gamegrump.start = function(){
     },
     {
         stands: [{x: 1, y: 0, stand: 26},{x: 3, y: 0, stand: 25}],
-        queue: [{pos: 10, num: 4}, {pos: 9, num: 2}, {pos: 27, num: 3}, {pos: 28, num: 3}, {pos: 29, num: 1}, {pos: 30, num: 1}, {pos: 31, num: 1}, {pos: 4, num: 7}],
+        queue: [{pos: 10, num: 4}, {pos: 9, num: 2}, {pos: 27, num: 3}, {pos: 28, num: 3}, {pos: 29, num: 1}, {pos: 30, num: 1}, {pos: 31, num: 1}, {pos: 4, num: 7}, {pos: 19, num: 1}],
         blocked: [{x:4, y: 5},{x:3, y: 5},{x:2, y: 5},{x:1, y: 5},{x:0, y: 5}]      
     }
 ];
@@ -467,8 +467,10 @@ gamegrump.start = function(){
         for (var i=0; i<gameObj.levels[gameObj.currentLevel].stands.length; i++){
             gameObj.activeStands[gameObj.levels[gameObj.currentLevel].stands[i].x][gameObj.levels[gameObj.currentLevel].stands[i].y].Start(gameObj.levels[gameObj.currentLevel].stands[i].stand);
         }
-        gameObj.activeQueue = gameObj.levels[gameObj.currentLevel].queue.slice(0);
-        console.log(gameObj.activeQueue);
+        for (var i=0; i<gameObj.levels[gameObj.currentLevel].queue.length; i++){
+            gameObj.activeQueue.push({num: gameObj.levels[gameObj.currentLevel].queue[i].num, pos: gameObj.levels[gameObj.currentLevel].queue[i].pos});// = gameObj.levels[gameObj.currentLevel].queue.slice(0);
+        }
+        //console.log(gameObj.activeQueue);
         //gameObj.timerstart = true;
         gameObj.standArea();
     };
